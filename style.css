@@ -1,0 +1,41 @@
+body{
+	background-color: rgb(255, 255, 255);
+	/* background-color: rgb(250, 250, 250); */
+}
+.navbar{
+	/* background: transparent; */
+	/* background-color: white; */
+	background-color: rgb(250, 250, 250);
+}
+.jumbotron{
+	padding-top: 0rem;
+	height: 500px;
+	background-color: rgb(250, 250, 250);
+	/* background-color: rgb(255, 255, 255); */
+}
+h1{
+	padding-top: 10rem;
+}
+.card{
+	margin: 1px;
+
+}
+.card-body{
+	padding: 0px;
+
+}
+.container-fluid{
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+
+}
+#row1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#row2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
