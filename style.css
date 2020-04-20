@@ -1,16 +1,20 @@
 body{
-	background-color: rgb(255, 255, 255);
-
+	background-color:#f6f6f6;
 }
-.navbar{
-	/* background: transparent; */
-
-	background-color: rgb(250, 250, 250);
+.navbar-dark{
+    /* transition-property: background-color; */
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+.navbar-light{
+    /* transition-property: background-color; */
+    transition-duration: .2s;
+    transition-timing-function: linear;
 }
 .jumbotron{
 	padding-top: 0rem;
 	height: 35rem;
-	background-color: rgb(250, 250, 250);
+	background-color: rgb(255, 255, 255);
 }
 #jumbo-body{
 	padding-top: 15rem;

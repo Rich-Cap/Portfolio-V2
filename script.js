@@ -4,23 +4,20 @@ $(document).ready(function () {
 	// });
 	$("#arrowdown").click(function () {
 		$('html, body').animate({
-			scrollTop: $("#cards-container").offset().top
+			scrollTop: $("#cards-container-header").offset().top
 		}, 3000);
-		$(".navbar").removeClass("navbar-light");
-		$(".navbar").addClass("navbar-dark");
-		$(".navbar").delay("slow").fadeIn().css("background-color", "darkblue");
-		// $(".navbar").animate({backgroundColor: '#000'}, 'slow');
-		// var y = $(window).scrollTop();
-		// if (y == "0"){
-		// 	$(".navbar").removeClass("navbar-dark");
-		// 	$(".navbar").addClass("navbar-light");
-		// };
-		$(window).scroll(function() {
-			var height = $(document).scrollTop();
-		
-			if(height < 5) {
-				console.log(height)
-			}
-		});
+	});
+	$(window).scroll(function() {
+		var height = $(document).scrollTop();
+
+		if(height < 1) {
+			$(".navbar").css("background-color", "#fff");
+			$(".navbar").removeClass("navbar-dark");
+			$(".navbar").addClass("navbar-light");
+		} else {
+			$(".navbar").css("background-color", "#3d5f69");
+			$(".navbar").removeClass("navbar-light");
+			$(".navbar").addClass("navbar-dark");
+		}
 	});
 });
