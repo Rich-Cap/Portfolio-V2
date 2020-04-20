@@ -63,9 +63,19 @@ img{
 	margin-bottom: 10px;
 }
 #description{
+	/* margin-top: 10rem; */
+	
+}
+.media{
+	padding-bottom: 2rem;
+}
+.tab-body{
 	margin-top: 10rem;
 	margin-bottom: 5rem;
 }
-.media{
-	padding: 2rem;
+#resume-body{
+	/* padding: 2rem; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
