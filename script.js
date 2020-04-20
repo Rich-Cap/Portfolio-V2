@@ -15,7 +15,7 @@ $(document).ready(function () {
 			$(".navbar").removeClass("navbar-dark");
 			$(".navbar").addClass("navbar-light");
 		} else {
-			$(".navbar").css("background-color", "#3d5f69");
+			$(".navbar").css("background-color", "#304b52");
 			$(".navbar").removeClass("navbar-light");
 			$(".navbar").addClass("navbar-dark");
 		}

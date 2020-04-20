@@ -25,15 +25,19 @@ body{
 	height: auto;
 	position: relative;
 	padding: 0px;
-	/* vertical-align: bottom; */
 }
 .card{
 	margin: 1px;
-
-}
-.card-body{
 	padding: 0px;
+	border-style: hidden;
+}
 
+/* .card-body{
+	padding: 0px;
+} */
+
+img{
+	border-radius: 10px;
 }
 .container-fluid{
 	margin-top: 10rem;
