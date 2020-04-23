@@ -4,6 +4,7 @@ $(document).ready(function () {
 	// });
 
 	// Change class and css on navbar
+	// Fade Text
 	$(window).scroll(function () {
 		var height = $(document).scrollTop();
 
@@ -12,10 +13,21 @@ $(document).ready(function () {
 			$(".navbar").removeClass("navbar-dark");
 			$(".navbar").addClass("navbar-light");
 		} else {
-			$(".navbar").css("background-color", "#304b52");
+			$(".navbar").css("background-color", "#004250");
 			$(".navbar").removeClass("navbar-light");
 			$(".navbar").addClass("navbar-dark");
 		}
+
+		var scrollTop = $(this).scrollTop();
+		
+		// console.log($('.display-5').height());
+
+		$('.jumbo-intro').css({
+			opacity: function() {
+				var documentHeight = $(document).height();
+				return 1 - (scrollTop * 5 / documentHeight);
+			}
+		});
 	});
 
 	// Slide to cards on click

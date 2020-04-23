@@ -20,13 +20,17 @@ body{
 .jumbotron{
 	padding-top: 0rem;
 	margin-bottom: 0rem;
-	height: 35rem;
+	height: 40rem;
 	background-color: rgb(255, 255, 255);
 }
 #jumbo-body{
 	padding-top: 15rem;
 	/* position: relative; */
 }
+.jumbo-intro{
+	opacity: 1;
+}
+
 .display-5{
 	position: fixed;
 	/* margin: 2rem; */
@@ -43,8 +47,8 @@ body{
 	padding: 0px;
 	margin: 2rem;
 	position: fixed;
-	/* left: 0;
-	top: 80%; */
+	/* left: 50%;
+	top: 70%; */
 }
 #wrap-cards{
 	background-color:#f6f6f6;
