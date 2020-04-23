@@ -14,23 +14,40 @@ body{
     transition-duration: .2s;
     transition-timing-function: linear;
 }
+.wrapper{
+	background-color:white;
+}
 .jumbotron{
 	padding-top: 0rem;
+	margin-bottom: 0rem;
 	height: 35rem;
 	background-color: rgb(255, 255, 255);
-	/* position: absolute; */
 }
 #jumbo-body{
 	padding-top: 15rem;
 	/* position: relative; */
 }
+.display-5{
+	position: fixed;
+	/* margin: 2rem; */
+}
+.lead{
+	position: fixed;
+	margin: 2rem;
+}
+
 #arrowdown{
 	width: 5%;
 	height: auto;
 	/* position: relative; */
 	padding: 0px;
+	margin: 2rem;
+	position: fixed;
 	/* left: 0;
 	top: 80%; */
+}
+#wrap-cards{
+	background-color:#f6f6f6;
 }
 .card{
 	margin: 1px;

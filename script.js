@@ -2,11 +2,8 @@ $(document).ready(function () {
 	// $("button").click(function () {
 	// 	$("#cards-container").slideUp(2000);
 	// });
-	$("#arrowdown").click(function () {
-		$('html, body').animate({
-			scrollTop: $("#cards-container-header").offset().top
-		}, 3000);
-	});
+
+	// Change class and css on navbar
 	$(window).scroll(function () {
 		var height = $(document).scrollTop();
 
@@ -20,6 +17,18 @@ $(document).ready(function () {
 			$(".navbar").addClass("navbar-dark");
 		}
 	});
+
+	// Slide to cards on click
+	$("#arrowdown").click(function () {
+		$('html, body').animate({
+			scrollTop: $("#cards-container-header").offset().top
+		}, 3000);
+	});
+
+	// Hover effect on cards
+
+
+
 	// Resume Slide effect
 	// $("#resume").load(function () {
 	// 	var elem = $("#resume");
@@ -51,9 +60,9 @@ $(document).ready(function () {
 	// 	}
 	// })
 
-	$(document).ready(function () {
-		$("#flip").click(function () {
-			$("#panel").slideDown("slow");
-		});
-	});
+	// $(document).ready(function () {
+	// 	$("#flip").click(function () {
+	// 		$("#panel").slideDown("slow");
+	// 	});
+	// });
 });
