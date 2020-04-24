@@ -22,7 +22,7 @@ $(document).ready(function () {
 		
 		// console.log($('.display-5').height());
 
-		$('.jumbo-intro').css({
+		$(".jumbo-intro").css({
 			opacity: function() {
 				var documentHeight = $(document).height();
 				return 1 - (scrollTop * 5 / documentHeight);
@@ -38,7 +38,19 @@ $(document).ready(function () {
 	});
 
 	// Hover effect on cards
+	$("#content-card1").hover(function(){
+		$("#pic1").toggleClass("img2");
+	});
 
+	$("#content-card1").on("mouseenter", function(){
+		$("#text1").removeClass("card-text-none");
+		$("#text1").addClass("card-text");
+	});
+
+	$("#content-card1").on("mouseleave", function(){
+		$("#text1").removeClass("card-text");
+		$("#text1").addClass("card-text-none");
+	})
 
 
 	// Resume Slide effect
