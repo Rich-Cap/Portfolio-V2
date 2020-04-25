@@ -14,16 +14,28 @@ body{
     transition-duration: .2s;
     transition-timing-function: linear;
 }
-#copyright{
-	font-size: 28px;
+.footer{
+	padding: 10px;
+	background-color: white;
 }
-.contact-logo{
-	width: 45px;
-	height: auto;
+.nav-link{
+	padding: 8px;
+}
+#copyright{
+	font-size: 18px;
+	color: rgb(61, 61, 61);
+}
+#contact-logo-mail{
+	width: auto;
+	height: 28px;
+}
+#contact-logo-linkedin{
+	width: auto;
+	height: 32px;
 }
 #contact-logo-github{
-	width: 38px;
-	height: auto;
+	width: auto;
+	height: 24px;
 }
 .wrapper{
 	background-color:white;
@@ -108,20 +120,13 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.footer{
-	padding: 10px;
-	margin-bottom: 10px;
-}
-#description{
-	/* margin-top: 10rem; */
-	
-}
+
 .media{
 	padding-bottom: 2rem;
 }
 .tab-body{
-	margin-top: 10rem;
-	margin-bottom: 5rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
 }
 #resume-body{
 	/* padding: 2rem; */

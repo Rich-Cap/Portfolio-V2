@@ -149,8 +149,11 @@ $(document).ready(function () {
 	});
 
 	// Reload mail Icon on hover
-	$("#contact-logo-mail").on("mouseover", function(){
+	$("button").on("mouseenter", function(){
 		var d = new Date();
-		$("#contact-logo-mail").attr("src", "./Content/ezgif.com-gif-maker.gif?" + d.getTime());
+		$("#contact-logo-mail").attr("src", "./Content/send-yellow-hover.gif?" + d.getTime());
+	});
+	$("button").on("mouseleave", function(){
+		$("#contact-logo-mail").attr("src", "./Content/send-yellow.gif");
 	});
 });
