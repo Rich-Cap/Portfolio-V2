@@ -34,12 +34,33 @@ $(document).ready(function () {
 	$("#arrowdown").click(function () {
 		$('html, body').animate({
 			scrollTop: $("#cards-container-header").offset().top
-		}, 3000);
+		}, 2000);
 	});
 
-	// Hover effect on cards
+	// Hover effect on cards with for loop
+	// for (var i=1; i <= 6; i++){
+	// 	var contentID = "#content-card" + [i];
+	// 	var picID = "#pic" + [i];
+	// 	var textID = "#text" + [i];
+
+	// 	$(contentID).hover(function(){
+	// 		$(picID).toggleClass("opacity");
+	// 		console.log(contentID);
+	// 	});
+	// 	$(contentID).on("mouseenter", function(){
+	// 		$(textID).removeClass("card-text-none");
+	// 		$(textID).addClass("card-text");
+	// 	});
+	// 	$(contentID).on("mouseleave", function(){
+	// 		$(textID).removeClass("card-text");
+	// 		$(textID).addClass("card-text-none");
+	// 	});
+	// 	console.log(contentID);
+	// }
+
+	// Hover on card 1
 	$("#content-card1").hover(function(){
-		$("#pic1").toggleClass("img2");
+		$("#pic1").toggleClass("opacity");
 	});
 
 	$("#content-card1").on("mouseenter", function(){
@@ -50,43 +71,80 @@ $(document).ready(function () {
 	$("#content-card1").on("mouseleave", function(){
 		$("#text1").removeClass("card-text");
 		$("#text1").addClass("card-text-none");
+	});
+
+	// Hover on card 2
+	$("#content-card2").hover(function(){
+		$("#pic2").toggleClass("opacity");
+	});
+
+	$("#content-card2").on("mouseenter", function(){
+		$("#text2").removeClass("card-text-none");
+		$("#text2").addClass("card-text");
+	});
+
+	$("#content-card2").on("mouseleave", function(){
+		$("#text2").removeClass("card-text");
+		$("#text2").addClass("card-text-none");
+	});
+
+	// Hover on card 3
+	$("#content-card3").hover(function(){
+		$("#pic3").toggleClass("opacity");
+	});
+
+	$("#content-card3").on("mouseenter", function(){
+		$("#text3").removeClass("card-text-none");
+		$("#text3").addClass("card-text");
+	});
+
+	$("#content-card3").on("mouseleave", function(){
+		$("#text3").removeClass("card-text");
+		$("#text3").addClass("card-text-none");
+	});
+
+	// Hover on card 4
+	$("#content-card4").hover(function(){
+		$("#pic4").toggleClass("opacity");
+	});
+
+	$("#content-card4").on("mouseenter", function(){
+		$("#text4").removeClass("card-text-none");
+		$("#text4").addClass("card-text");
+	});
+
+	$("#content-card4").on("mouseleave", function(){
+		$("#text4").removeClass("card-text");
+		$("#text4").addClass("card-text-none");
 	})
 
+	// Hover on card 5
+	$("#content-card5").hover(function(){
+		$("#pic5").toggleClass("opacity");
+	});
 
-	// Resume Slide effect
-	// $("#resume").load(function () {
-	// 	var elem = $("#resume");
-	// 	var pos = 350;
-	// 	var id = setInterval(frame, 10);
-	// 	function frame() {
-	// 		if (pos == 175) {
-	// 			clearInterval(id);
-	// 		} else {
-	// 			pos--;
-	// 			elem.style.top = pos + 'px';
-	// 			elem.style.left = pos + 'px';
-	// 		}
-	// 	}
-	// });
+	$("#content-card5").on("mouseenter", function(){
+		$("#text5").removeClass("card-text-none");
+		$("#text5").addClass("card-text");
+	});
 
-	// $("#example").click(function myMove() {
-	// 	var elem = $("#myAnimation");
-	// 	var pos = 350;
-	// 	var id = setInterval(frame, 10);
-	// 	function frame() {
-	// 		if (pos == 175) {
-	// 			clearInterval(id);
-	// 		} else {
-	// 			pos--;
-	// 			elem.css("top") = pos + 'px';
-	// 			elem.css("left") = pos + 'px';
-	// 		}
-	// 	}
-	// })
+	$("#content-card5").on("mouseleave", function(){
+		$("#text5").removeClass("card-text");
+		$("#text5").addClass("card-text-none");
+	})
 
-	// $(document).ready(function () {
-	// 	$("#flip").click(function () {
-	// 		$("#panel").slideDown("slow");
-	// 	});
-	// });
+	// Hover on card 6
+	$("#content-card6").hover(function(){
+		$("#pic6").toggleClass("opacity");
+	});
+
+	$("#content-card6").on("mouseenter", function(){
+		$("#text6").removeClass("card-text-none");
+		$("#text6").addClass("card-text");
+	});
+
+	$("#content-card6").on("mouseleave", function(){
+		$("#text6").removeClass("card-text");
+		$("#text6").addClass("card-text-none");
+	})
 });

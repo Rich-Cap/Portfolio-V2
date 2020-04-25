@@ -2,7 +2,7 @@
 	background-color: #fff;
 }
 body{
-	background-color:#f6f6;
+	background-color: #f6f6f6
 }
 .navbar-dark{
     /* transition-property: background-color; */
@@ -49,12 +49,11 @@ body{
 .content-cards{
 	border-radius: 10px;
 }
-.img1{
+.img{
 	border-radius: 10px;
 	position: relative;
-	/* filter: brightness(70%); */
 }
-.img2{
+.opacity{
 	border-radius: 10px;
 	position: relative;
 	/* filter: brightness(70%); */
