@@ -37,7 +37,16 @@ $(document).ready(function () {
 		}, 2000);
 	});
 
-	// Hover effect on cards with for loop
+	// Reload mail Icon on hover
+	$("button").on("mouseenter", function(){
+		var d = new Date();
+		$("#contact-logo-mail").attr("src", "./Content/send-yellow-hover.gif?" + d.getTime());
+	});
+	$("button").on("mouseleave", function(){
+		$("#contact-logo-mail").attr("src", "./Content/send-yellow.gif");
+	});
+
+	// // Hover effect on cards with for loop
 	// for (var i=1; i <= 6; i++){
 	// 	var contentID = "#content-card" + [i];
 	// 	var picID = "#pic" + [i];
@@ -148,12 +157,4 @@ $(document).ready(function () {
 		$("#text6").addClass("card-text-none");
 	});
 
-	// Reload mail Icon on hover
-	$("button").on("mouseenter", function(){
-		var d = new Date();
-		$("#contact-logo-mail").attr("src", "./Content/send-yellow-hover.gif?" + d.getTime());
-	});
-	$("button").on("mouseleave", function(){
-		$("#contact-logo-mail").attr("src", "./Content/send-yellow.gif");
-	});
 });
