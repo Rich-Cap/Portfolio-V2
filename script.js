@@ -146,5 +146,11 @@ $(document).ready(function () {
 	$("#content-card6").on("mouseleave", function(){
 		$("#text6").removeClass("card-text");
 		$("#text6").addClass("card-text-none");
-	})
+	});
+
+	// Reload mail Icon on hover
+	$("#contact-logo-mail").on("mouseover", function(){
+		var d = new Date();
+		$("#contact-logo-mail").attr("src", "./Content/ezgif.com-gif-maker.gif?" + d.getTime());
+	});
 });

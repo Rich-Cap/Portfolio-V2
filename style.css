@@ -14,6 +14,17 @@ body{
     transition-duration: .2s;
     transition-timing-function: linear;
 }
+#copyright{
+	font-size: 28px;
+}
+.contact-logo{
+	width: 45px;
+	height: auto;
+}
+#contact-logo-github{
+	width: 38px;
+	height: auto;
+}
 .wrapper{
 	background-color:white;
 }
@@ -121,38 +132,4 @@ body{
 #resume{
 	width: 100%;
 	height: auto;
-}
-/* Slide effect */
-#myContainer {
-	width: 400px;
-	height: 400px;
-	position: relative;
-	background: yellow;
-}
-#myAnimation {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	left:350px;
-	top:350px;
-	background-color: red;
-}
-#panel, #flip {
-	padding: 5px;
-	text-align: center;
-	background-color: #e5eecc;
-	border: solid 1px #c3c3c3;
-}
-
-#panel {
-	padding: 50px;
-	display: none;
-}
-  /* Slide effect end */
-
-.form-control{
-	/* border-style: none; */
-}
-#contact-body{
-	
 }
