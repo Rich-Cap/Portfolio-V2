@@ -65,50 +65,49 @@ body{
 	margin-top: 0em;
 }
 .card{
-	margin: 1px;
-	padding: 0px;
 	border-style: hidden;
 }
 .content-cards{
 	border-radius: 10px;
+	margin: 1px;
+	padding: 0px;
 }
-.img{
+
+.c-img{
 	border-radius: 10px;
 	position: relative;
 }
-.opacity{
-	border-radius: 10px;
-	position: relative;
-	/* filter: brightness(70%); */
-	opacity: 70%;
-}
-.card-text-none{
-	display: none;
-}
-.card-text{
+.c-text{
 	position: absolute;
-	/* font-weight: bold; */
 	font-size: 24px;
 	color: whitesmoke;
-	/* color: #004250; */
 	background-color: #004250;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	/* background-color: whitesmoke; */
 	padding: 10px;
 	align-self: center;
 	top: 45%;
-	z-index: 1;
-	visibility: visible;
 }
-
+.content-cards:hover .c-img{
+	opacity: .7;
+}
+.content-cards:hover .c-text{
+	position: absolute;
+	font-size: 24px;
+	color: whitesmoke;
+	background-color: #004250;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding: 10px;
+	align-self: center;
+	top: 45%;
+	opacity: 1;
+	z-index: 1;
+}
 .container-fluid{
 	margin-top: 4rem;
 }
 #cards-container{
-	/* margin-top: 25px; */
 	padding-top: 25px;
 	padding-bottom: 25px;
-	/* z-index: -1;	 */
 }
 #row1{
 	display: flex;
