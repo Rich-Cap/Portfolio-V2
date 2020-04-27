@@ -1,8 +1,8 @@
 .navbar{
-	background-color: #fff;
+	background-color: white;
 }
 body{
-	background-color: #f6f6f6
+	background-color: #f6f6f6;
 }
 .navbar-dark{
     /* transition-property: background-color; */
@@ -16,26 +16,28 @@ body{
 }
 .footer{
 	padding: 10px;
-	background-color: white;
+	background-color: rgb(236, 236, 236);
 }
 .nav-link{
-	padding: 8px;
+	padding-right: 5px;
 }
 #copyright{
-	font-size: 18px;
-	color: rgb(61, 61, 61);
+	font-size: 14px;
+	color: rgb(75, 75, 75);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 5px;
 }
 #contact-logo-mail{
-	width: auto;
-	height: 28px;
+	color: darkgoldenrod;
 }
-#contact-logo-linkedin{
-	width: auto;
-	height: 32px;
+#contact-logo-mail:hover{
+	color: rgb(134, 98, 7);
 }
 #contact-logo-github{
-	width: auto;
-	height: 24px;
+	color: black;
+}
+#contact-logo-github:hover{
+	color: rgb(92, 92, 92);
 }
 .wrapper{
 	background-color:white;
