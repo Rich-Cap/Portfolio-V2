@@ -121,9 +121,12 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-
 .media{
-	padding-bottom: 2rem;
+	padding: 2rem;
+}
+#healthcare{
+	background-color: rgb(182, 146, 26);
+	color: white;
 }
 .tab-body{
 	margin-top: 7rem;
